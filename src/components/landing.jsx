@@ -6,84 +6,95 @@ import Link from "next/link";
 
 export function Landing() {
   return (
-    <section className="w-full bg-gray-900 text-white py-12 md:py-24 lg:py-32">
-      <div className="container grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-10 m-auto">
+    <section className="w-full min-h-screen bg-gray-900 text-white py-12 md:py-24 lg:py-32">
+      <div className="container max-w-[55%] mx-auto grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-10 m-auto">
         <div className="space-y-3 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-6xl">
             Easy Debian Download
           </h2>
           <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Choose your preferred Debian download below.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 text-lg">
           <div>
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-8 text-sm font-medium text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-700 disabled:pointer-events-none disabled:opacity-50"
-              href="#"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-8 text-xl font-bold text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-700 disabled:pointer-events-none disabled:opacity-50"
+              href="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-12.4.0-amd64-DVD-1.iso"
             >
-              Debian 10
+              Debian DVD
             </Link>
             <p className="mt-2 text-gray-300">
-              Download the latest stable release of Debian, Debian 10.
+              Download the latest stable release of Debian, Debian 12.
+            </p>
+            <p className="mt-2 text-gray-300">
+              Full image, installation without internet. (4GB)
             </p>
           </div>
           <div>
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md bg-green-600 px-8 text-sm font-medium text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700 disabled:pointer-events-none disabled:opacity-50"
-              href="#"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-green-600 px-8 text-lg font-bold text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700 disabled:pointer-events-none disabled:opacity-50"
+              href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.4.0-amd64-netinst.iso"
             >
-              Debian 11
+              Debian NetInst
             </Link>
             <p className="mt-2 text-gray-300">
-              Download the current testing release of Debian, Debian 11.
+              Download the latest stable release of Debian, Debian 12.
+            </p>
+            <p className="mt-2 text-gray-300">
+              Mid image, installation with internet (700MB).
             </p>
           </div>
           <div>
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md bg-yellow-600 px-8 text-sm font-medium text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-yellow-700 disabled:pointer-events-none disabled:opacity-50"
-              href="#"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-yellow-600 px-8 text-xl font-bold text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-yellow-700 disabled:pointer-events-none disabled:opacity-50"
+              href="https://cdimage.debian.org/cdimage/weekly-builds/amd64/"
             >
               Debian Testing
             </Link>
             <p className="mt-2 text-gray-300">
-              Download the bleeding edge, development release of Debian.
+              Download the bleeding edge, development release of Debian. The
+              latest packages.
+            </p>
+            <p className="mt-2 text-gray-300">
+              Both images, installation with internet (700MB) and without
+              internet (4GB).
             </p>
           </div>
           <div>
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md bg-red-600 px-8 text-sm font-medium text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700 disabled:pointer-events-none disabled:opacity-50"
-              href="#"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-red-600 px-8 text-xl font-bold text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700 disabled:pointer-events-none disabled:opacity-50"
+              href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-gnome.iso"
             >
-              Debian Unstable
+              Debian Live
             </Link>
             <p className="mt-2 text-gray-300">
-              Download the unstable release of Debian for the latest features.
+              Try Debian without having to install it, but u can install from
+              here, too. Full image, installation without internet. (4GB)
             </p>
           </div>
         </div>
-        <div className="mt-10 space-y-6 text-gray-300">
-          <h3 className="text-2xl font-bold">Explanation of Debian Versions</h3>
-          <p>
-            <span className="text-blue-600">Debian 10:</span> The latest stable
-            release of Debian, providing the robustness you need for a server
-            environment.
-          </p>
-          <p>
-            <span className="text-green-600">Debian 11:</span> The current
-            testing release, suitable for users who want to help improve Debian
-            by testing changes.
-          </p>
-          <p>
-            <span className="text-yellow-600">Debian Testing:</span> The
-            bleeding edge, development release, for those who want to live on
-            the edge and explore the latest features.
-          </p>
-          <p>
-            <span className="text-red-600">Debian Unstable:</span> The unstable
-            release, only recommended for advanced users and developers.
-          </p>
-        </div>
+      </div>
+      <div className="mt-20 text-gray-300 container max-w-[55%] mx-auto grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-1 m-auto">
+        <p className="font-bold text-lg">💡 Things what have to know:</p>
+        <p className="">
+          - All ISOs are AMD64 (for Intel or AMD cpu de 64 bits), not ARM are
+          here, but u can look for that on{" "}
+          <a
+            className="font-bold text-red-400 hover:text-red-500"
+            href="https://www.debian.org/distrib/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Debian Website
+          </a>
+          .
+        </p>
+        <p>
+          - Debian testing thougt you to a directory that have both versions
+          (NetInst/DVD), choose one between iso-cd (NetInst) or iso-dvd and
+          download "debian-testing-amd64-(netinst/DVD).iso"
+        </p>
       </div>
     </section>
   );

@@ -79,7 +79,7 @@ export function Landing() {
         <p className="font-bold text-lg">💡 Things what have to know:</p>
         <p>
           - If u don't know which download, just pick the
-          <strong>debian-xxx-amd64-xxx.iso</strong>
+          debian-xxx-amd64-xxx.iso
         </p>
         <p className="">
           - All ISOs are AMD64 (for Intel or AMD cpu de 64 bits), not ARM are

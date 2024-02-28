@@ -20,7 +20,7 @@ export function Landing() {
           <div>
             <Link
               className="inline-flex h-10 items-center justify-center rounded-md bg-blue-600 px-8 text-xl font-bold text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-700 disabled:pointer-events-none disabled:opacity-50"
-              href="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-12.4.0-amd64-DVD-1.iso"
+              href="https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/"
             >
               Debian DVD
             </Link>
@@ -34,7 +34,7 @@ export function Landing() {
           <div>
             <Link
               className="inline-flex h-10 items-center justify-center rounded-md bg-green-600 px-8 text-lg font-bold text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700 disabled:pointer-events-none disabled:opacity-50"
-              href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.4.0-amd64-netinst.iso"
+              href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/"
             >
               Debian NetInst
             </Link>
@@ -64,7 +64,7 @@ export function Landing() {
           <div>
             <Link
               className="inline-flex h-10 items-center justify-center rounded-md bg-red-600 px-8 text-xl font-bold text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700 disabled:pointer-events-none disabled:opacity-50"
-              href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.4.0-amd64-gnome.iso"
+              href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/"
             >
               Debian Live
             </Link>
@@ -77,6 +77,10 @@ export function Landing() {
       </div>
       <div className="mt-20 text-gray-300 container max-w-[55%] mx-auto grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-1 m-auto">
         <p className="font-bold text-lg">💡 Things what have to know:</p>
+        <p>
+          - If u don't know which download, just pick the
+          <strong>debian-xxx-amd64-xxx.iso</strong>
+        </p>
         <p className="">
           - All ISOs are AMD64 (for Intel or AMD cpu de 64 bits), not ARM are
           here, but u can look for that on{" "}

@@ -78,7 +78,7 @@ export function Landing() {
       <div className="mt-20 text-gray-300 container max-w-[55%] mx-auto grid items-center justify-center gap-4 px-4 md:px-6 lg:gap-1 m-auto">
         <p className="font-bold text-lg">💡 Things what have to know:</p>
         <p>
-          - If u don't know which download, just pick the 
+          - If u don't know which file download, just pick the 
           <strong>debian-xxx-amd64-xxx.iso</strong>
         </p>
         <p className="">
